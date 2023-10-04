@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Formulário de Contato</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
-    <style>
-        h1{
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-        }
-    </style>
-    
 </head>
+
 <body>
-    <header id="cabecalho">
-    
-        <nav id="menu">
-<h1>
-<form method='post' action=''>
-    <p>
-        <label for='email'>E-mail:</label>
-        <input type='email' id='email' name='email'>
-        <span>Por exemplo, seunome@dominio.com</span>
-    </p>
-    <p>
-    <label for='subject'>Assunto</label>
-    <input type='text' id='subject'>
-    </p>
-    <p>
-        <label for='content'>Mensagem</label>
-        <textarea id='content'></textarea>
-    </p>
-    <button>Enviar</button>
-    </h1>
+    <div id="form">
+        <form action="">
+            <h2 class="title">Formulário de Contato</h2>
+            <label for="username">Nome</label>
+            <div class="input">
+                <input id="username" name="username" placeholder="Username" type="text">
+            </div>
+            
+            <label for="">Email</label>
+            <div class="input">
+                <i class="fa-regular fa-envelope"></i>
+                <input id="email" name="email" placeholder="Email" type="text">
+            </div>
+
+            <label for="assunto">Assunto</label>
+            <div class="input">
+                <input id='assunto' name="assunto" placeholder="Subject" type="text">
+            </div><br>
+            <div id="btn">
+                <button type="submit">Enviar</button>
+            </div>
 </body>
+
 </html>
